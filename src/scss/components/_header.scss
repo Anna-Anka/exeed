@@ -1,3 +1,10 @@
 .header {
-    
+	position: relative;
+	padding-bottom: 52.7%;
+	background-position: top center;
+
+	&__bg {
+		@include resize-img;
+		background-position: top center;
+	}
 }
