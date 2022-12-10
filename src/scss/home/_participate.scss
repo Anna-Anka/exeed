@@ -1,0 +1,65 @@
+.participate {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+
+	&__title {
+		margin-bottom: 9px;
+	}
+
+	&__subtext {
+		margin-bottom: 93px;
+		@include adaptiv-value('font-size', 24, 18, 1);
+		line-height: 1.5;
+	}
+
+	&__items {
+		gap: 40px;
+		column-count: 2;
+	}
+
+	&__item {
+		margin-bottom: 40px;
+	}
+}
+
+.step-card {
+	display: flex;
+	text-align: left;
+	text-transform: uppercase;
+
+	&__number,
+	&__accent {
+		color: $orange-200;
+	}
+
+	&__number {
+		position: relative;
+		margin-right: 20px;
+		padding-right: 10px;
+		font-size: 93px;
+		line-height: 1.2;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			background-color: $orange-200;
+			content: '';
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+
+	&__text {
+	}
+
+	&__accent {
+		font-weight: $fw-600;
+	}
+}

@@ -1,0 +1,65 @@
+<section class="participate">
+    <div class="container">
+        <h2 class="participate__title title">
+            Прими участие в акциях exeed и выиграй призы!
+        </h2>
+        <div class="participate__subtext">
+            <p>
+                Каждый желающий может принять участие в розыгрыше специальных призов от EXEED. Для этого вам необходимо посетить стенд EXEED в ГУМе и выполнить следующие шаги:
+            </p>
+        </div>
+        <ul class="participate__items">
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                    'number' : '01',
+                    'subtitle' : 'Шаг 01',
+                    'text' : '<p>Отсканируйте QR-код и нажмите кнопку <span class="step-card__accent">«ПРИНЯТЬ УЧАСТИЕ»</span> </p>'
+                })
+            </li>
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                'number' : '02',
+                'subtitle' : 'Шаг 02',
+                'text' : '<p>Заполните контактную информацию, дайте согласие на обработку персональных данных и нажмите на кнопку<span class="step-card__accent">«УЧАСТВОВАТЬ»</span> </p>'
+                })
+            </li>
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                'number' : '03',
+                'subtitle' : 'Шаг 03',
+                'text' : '<p>Загрузите фото. На фотографии обязательно должны присутствовать вы и автомобиль, представленный на стенде в ГУМ</p>'
+                })
+            </li>
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                'number' : '04',
+                'subtitle' : 'Шаг 04',
+                'text' : '<p>После загрузки фото выберите рамку для фотографии </p>'
+                })
+            </li>
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                'number' : '05',
+                'subtitle' : 'Шаг 05',
+                'text' : '<p>Поделитесь фотографией с хештегом <span class="step-card__accent">#EXEEDНОВАЯГЛАВА</span> Вконтакте. Страница вашего профиля должна быть открытой</p>'
+                })
+            </li>
+            <li class="participate__item">
+                @include('./../components/_step-card.html', {
+                'number' : '06',
+                'subtitle' : 'Шаг 06',
+                'text' : '<p>Ищите результаты конкурса на официальной странице <a class="step-card__accent" href="#" target="_blank">EXEED</a>. Подведение результатов будет проводиться 26.12.2022, 09.01.2023, 23.11.2023, 6.02.2023, 20.02.2023, 28.02.2023</p>'
+                })
+            </li>
+        </ul>
+        <div class="participate__text">
+            <p>
+                Раз в две недели организатор случайным образом выбирает победителя из участников, выполнивших все условия конкурса, участник получает супер-приз – плед от бренда EXEED в коллаборации с известным
+                дизайнером Игорем Чапуриным!
+            </p>
+            <p>
+                Результаты публикуются на официальной <a class="step-card__accent" href="#" target="_blank">странице</a> бренда в vk.com и на <a class="step-card__accent" href="#" target="_blank">сайте</a>
+            </p>
+        </div>
+    </div>
+</section>
