@@ -71,13 +71,8 @@ body {
 	}
 }
 
-.section {
-	padding: 60px 0;
-}
-
 .title {
-	margin-bottom: 40px;
-    @include adaptiv-value("font-size", 66, 36, 1);
+    @include adaptiv-value("font-size", 66, 30, 1);
 	font-family: $tacticSansExd;
 	line-height: 1.2;
 	text-align: center;
