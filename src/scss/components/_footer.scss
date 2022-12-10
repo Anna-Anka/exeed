@@ -1,3 +1,40 @@
 .footer {
-    
+	padding: 106px 0 50px;
+	text-transform: uppercase;
+
+	&__top {
+		@include flex-column-all-center;
+		margin-bottom: 40px;
+		@include adaptiv-value('font-size', 24, 20, 1);
+	}
+
+	&__download {
+		position: relative;
+		padding: 41px 90px 24px 23px;
+		font-size: 20px;
+		border: 1px solid $white;
+		@include adaptiv-value('margin-bottom', 82, 40, 1);
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			right: 35px;
+			width: 32px;
+			height: 38px;
+			background-image: url('../img/icons/download.png');
+			transform: translateY(-50%);
+			content: '';
+			@include bg-conatin;
+		}
+	}
+
+	&__link {
+		line-height: 1.5;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	&__logo {
+		@include adaptiv-value('margin-left', 55, 15, 1);
+	}
 }
