@@ -1,0 +1,79 @@
+.stages {
+	position: relative;
+	padding: 27px 0 30px;
+	overflow: hidden;
+	line-height: 1.2;
+	text-align: center;
+	background-color: $orange-200;
+
+	&::before,
+	&::after {
+		position: absolute;
+		width: 100%;
+		opacity: 0.35;
+		content: '';
+		@include bg-cover;
+
+		@include mq(lg) {
+			display: none;
+		}
+	}
+
+	&::before {
+		top: -16px;
+		left: 0;
+		max-width: 391px;
+		height: 844px;
+		background-image: url('../img/stages/decor-left.png');
+	}
+
+	&::after {
+		top: -130px;
+		right: 0;
+		max-width: 364px;
+		height: 1017px;
+		background-image: url('../img/stages/decor-right.png');
+	}
+
+	&__title {
+		margin-bottom: 27px;
+	}
+
+	&__subtitle {
+		width: 100%;
+		max-width: 765px;
+		margin: 0 auto 38px;
+		@include adaptiv-value('font-size', 24, 20, 1);
+	}
+
+	&__items {
+		text-transform: uppercase;
+		@include adaptiv-value('font-size', 21, 18, 1);
+	}
+
+	&__item {
+		position: relative;
+        padding-bottom: 32px;
+
+		&:not(:last-child) {
+			margin-bottom: 14px;
+
+			&::before {
+				@include bg-conatin;
+				position: absolute;
+				right: 50%;
+				bottom: 0;
+				width: 21px;
+				height: 21px;
+				background-image: url('../img/icons/arrow-down.png');
+				transform: translateX(50%);
+				content: '';
+			}
+		}
+	}
+
+	&__accent {
+		font-weight: $fw-600;
+		font-family: $tacticSansExd;
+	}
+}
